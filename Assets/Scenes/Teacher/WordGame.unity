@@ -213,6 +213,7 @@ GameObject:
   - component: {fileID: 1249629823}
   - component: {fileID: 1249629825}
   - component: {fileID: 1249629824}
+  - component: {fileID: 1249629826}
   m_Layer: 0
   m_Name: MoleHole01
   m_TagString: Untagged
@@ -293,6 +294,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1249629822}
   m_Mesh: {fileID: 5864311242745975977, guid: c7fce5122ef401f4181bf99eecd13277, type: 3}
+--- !u!114 &1249629826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249629822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83146a04ebfb90d4c882f21e8c53bfa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MoleController
+  animator: {fileID: 837384005}
+  currentAnimation: 0
 --- !u!1 &1295954292
 GameObject:
   m_ObjectHideFlags: 0
@@ -24308,5 +24323,5 @@ SceneRoots:
   m_Roots:
   - {fileID: 1295954295}
   - {fileID: 1997512929}
-  - {fileID: 1249629823}
   - {fileID: 2145265390309486111}
+  - {fileID: 1249629823}
