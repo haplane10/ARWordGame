@@ -1,4 +1,5 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 
@@ -52,6 +53,14 @@ public class MoleManager : MonoBehaviour
             }
 
             mole.position = spawnPosition;
+        }
+    }
+
+    public void CheckMoleWord(TMP_InputField value)     {
+        if (mole != null)
+        {
+            MoleController moleController = mole.GetComponentInChildren<MoleController>();
+            moleController.CheckWord(value.text);
         }
     }
 }
