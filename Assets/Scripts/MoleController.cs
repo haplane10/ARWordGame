@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using TMPro;
 using UnityEngine;
 
 public class MoleController : MonoBehaviour
@@ -10,12 +11,16 @@ public class MoleController : MonoBehaviour
     public bool isCorrect = false;
     public bool isWrong = false;
 
+    public TextMeshPro wordText;
+    public WordSO easyWords;
+
     Coroutine moleCoroutine = null;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         moleCoroutine = StartCoroutine(MoleState());
+        wordText.text = easyWords.words[Random.Range(0, easyWords.words.Count)];
     }
 
     // Update is called once per frame
