@@ -61,6 +61,8 @@ public class MoleManager : MonoBehaviour
         {
             MoleController moleController = mole.GetComponentInChildren<MoleController>();
             moleController.CheckWord(value.text);
+
+            value.text = "";
         }
     }
 }

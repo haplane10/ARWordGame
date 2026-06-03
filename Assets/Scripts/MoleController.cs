@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 
@@ -45,7 +46,10 @@ public class MoleController : MonoBehaviour
 
     public void CheckWord(string value)
     {
-        if (value == wordText.text)
+        string a = value.Trim();
+        string b = wordText.text.Trim();
+
+        if (string.Equals(a, b, StringComparison.Ordinal))
         {
             isCorrect = true;
         }
